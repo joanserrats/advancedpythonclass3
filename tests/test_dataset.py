@@ -15,15 +15,16 @@ class TestDataset(unittest.TestCase):
         """
         path to dataset
         """
-        self.path = "dataset/BooksDatasetClean.csv"
+        self.path = "dataset/BooksDatasetClean.cdsgssv"
 
 
-def test_extension_fail(self):
-    """
-    test for the extension of the dataset
-    """
-    with self.assertRaises(TypeError):
-        load_dataset(self.path)
+    def test_extension_fail(self):
+        """
+        test for the extension of the dataset
+        """
+        with self.assertRaises(TypeError):
+            load_dataset(self.path)
+
 
 if __name__ == "__main__":
     unittest()

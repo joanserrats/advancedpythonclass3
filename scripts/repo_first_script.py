@@ -36,7 +36,7 @@ def main(file_name):
     """
     Main function
     """
-    df = load_dataset(input_file)
+    df = load_dataset(file_name)
     
     
     result = FilteringClass(df).filter_price(12)
