@@ -25,4 +25,3 @@ def test_extension_fail(self):
     with self.assertRauses(ValueError):
         load_dataset(self.path)
 
-
