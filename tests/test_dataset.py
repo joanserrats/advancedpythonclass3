@@ -22,6 +22,8 @@ def test_extension_fail(self):
     """
     test for the extension of the dataset
     """
-    with self.assertRauses(ValueError):
+    with self.assertRaises(TypeError):
         load_dataset(self.path)
 
+if __name__ == "__main__":
+    unittest()
