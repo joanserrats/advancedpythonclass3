@@ -6,7 +6,7 @@ class FilteringClass:
     Class for filtering
     """
 
-    def init(self,df):
+    def __init__(self,df):
         self.df = df
 
     def filter_price(self, price):
@@ -15,7 +15,7 @@ class FilteringClass:
         """
         return self.df[self.df['Price Starting With ($)'] < price]
     
-    def load_dataset(filename):
+    def load_dataset(self, filename):
         """
         Function to Load Dataset
         """
